@@ -20,6 +20,8 @@
         align-items: center;
         position: sticky;
         top: 0;
+        padding: 15px 0px 0px;
+        margin: -10px;
         z-index: 100;
       }
 
@@ -28,14 +30,16 @@
         color: black;
       }
 
-      header nav ul li {
+      header ul li {
+        display: inline-flex;
+        font-weight: 400;
         list-style: none;
         text-decoration: none;
-        display: inline-block;
-        padding: 0px 20px;
+        padding: 0px 5vw;
       }
 
       .logo {
+        margin-left: 20px;
         width: 300px;
       }
 
@@ -166,6 +170,88 @@
         margin: 5px 0px 0px;
         color: #444444;
       }
+
+      @media (max-width: 850px) {
+        header ul li {
+          display: flex;
+          flex-direction: column;
+          padding: 3px 0px;
+          text-align: center;
+          margin-right: 80px;
+      }
+
+      @media (max-width: 600px) {
+        header {
+          display: block;
+        }
+
+        .logo {
+          margin: 0px auto;
+        }
+
+        header ul {
+          margin-top: 5px;
+        }
+
+        header ul li {
+          display: flex;
+          flex-direction: column;
+          padding: 3px 0px;
+          text-align: center;
+          margin-right: 0px;
+
+        }
+
+        .icon {
+          visibility:collapse;
+          width: 0px;
+          padding: 0px;
+          margin-right: 0px;
+
+        }
+        #fire{
+          margin-right: 0px;
+          width: 0px;
+          padding: 0px;
+
+        }
+
+
+        .container{
+          transform: translateX(-15vw);
+          text-align: center;
+          margin-left: 0px;
+
+        }
+        .container h2{
+          text-align: center;
+        }
+        p{
+          width:450px;
+
+        }
+
+        #video {
+          /* height: 189px;
+          width: 336px; */
+          width: 90vw;
+          margin: 75px 17vw;
+          border: none;
+        }
+
+        #pricing{
+          flex-direction: column;
+          transform: translateX(15vw);
+
+        }
+
+        footer{
+          width: 105%;
+          margin-left: -20px;
+        }
+
+
+      }
     </style>
   </head>
 
@@ -181,8 +267,8 @@
         </a>
       </div>
 
-      <nav id="nav-bar">
-        <ul>
+      <nav>
+        <ul id="nav-bar">
           <li>
             <a class="nav-link" href="#futures">Features</a>
           </li>
@@ -254,51 +340,51 @@
         <iframe id="video" src="https://www.youtube.com/embed/y8Yv4pnO7qc">
         </iframe>
       </section>
-
-      <section id="pricing">
-        <div id="TENOR TROMBONE" class="cntnr">
-          <div class="cntnr_head">TENOR TROMBONE</div>
-          <h2 class="price">$600</h2>
-          <div class="cntnr_cntnt">
-            <ul>
-              <li>Lorem ipsum.</li>
-              <li>Lorem ipsum.</li>
-              <li>Lorem ipsum dolor.</li>
-              <li>Lorem ipsum.</li>
-            </ul>
-            <button class="btn" id="sellect">SELECT</button>
-          </div>
-        </div>
-
-        <div id="BASS TROMBONE" class="cntnr">
-          <div class="cntnr_head">TENOR TROMBONE</div>
-          <h2 class="price">$900</h2>
-          <div class="cntnr_cntnt">
-            <ul>
-              <li>Lorem ipsum.</li>
-              <li>Lorem ipsum.</li>
-              <li>Lorem ipsum dolor.</li>
-              <li>Lorem ipsum.</li>
-            </ul>
-            <button class="btn" id="sellect">SELECT</button>
-          </div>
-        </div>
-
-        <div id="VALVE TROMBONE" class="cntnr">
-          <div class="cntnr_head">TENOR TROMBONE</div>
-          <h2 class="price">$1200</h2>
-          <div class="cntnr_cntnt">
-            <ul>
-              <li>Lorem ipsum.</li>
-              <li>Lorem ipsum.</li>
-              <li>Lorem ipsum dolor.</li>
-              <li>Lorem ipsum.</li>
-            </ul>
-            <button class="btn" id="sellect">SELECT</button>
-          </div>
-        </div>
-      </section>
     </div>
+
+    <section id="pricing">
+      <div id="TENOR TROMBONE" class="cntnr">
+        <div class="cntnr_head">TENOR TROMBONE</div>
+        <h2 class="price">$600</h2>
+        <div class="cntnr_cntnt">
+          <ul>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ul>
+          <button class="btn" id="sellect">SELECT</button>
+        </div>
+      </div>
+
+      <div id="BASS TROMBONE" class="cntnr">
+        <div class="cntnr_head">TENOR TROMBONE</div>
+        <h2 class="price">$900</h2>
+        <div class="cntnr_cntnt">
+          <ul>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ul>
+          <button class="btn" id="sellect">SELECT</button>
+        </div>
+      </div>
+
+      <div id="VALVE TROMBONE" class="cntnr">
+        <div class="cntnr_head">TENOR TROMBONE</div>
+        <h2 class="price">$1200</h2>
+        <div class="cntnr_cntnt">
+          <ul>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ul>
+          <button class="btn" id="sellect">SELECT</button>
+        </div>
+      </div>
+    </section>
 
     <footer>
       <ul>
